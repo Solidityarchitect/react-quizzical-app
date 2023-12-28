@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F7FB; /* 根据图片背景颜色调整 */
+    color: #293264;
+}
+
+.HomePage--title {
+    text-align: center; 
+    color: #293264; 
+    font-size: 2.5em; 
+    margin-top: 170px;
+    margin-bottom: 7px;
+}
+
+.HomePage--text {
+    text-align: center; 
+    color: #293264; 
+    font-size: 1.5em; 
+    margin-bottom: 29px;
+    font-weight: normal; 
+}
+
+.HomePage--button {
+    display: block; 
+    margin: 0 auto; 
+    color: white; 
+    background-color: #4D5B9E; 
+    border: none; 
+    border-radius: 10px;
+    padding: 12px 35px; 
+    font-weight: normal; 
+    font-size: 2em; 
+}
+
+.HomePage--block1 {
+    position: absolute;
+    top: 0px;
+    left: 410px;
+    width: 200px; /* 调整图片宽度 */
+    height: 300px; /* 调整图片高度 */
+    overflow: hidden; /* 限制显示范围 */
+    z-index: 1; /* 确保它在其他内容上方 */
+}
+
+.HomePage--block2 {
+    position: absolute;
+    bottom: 0px;
+    right: 470px;
+    width: 150px; /* 调整图片宽度 */
+    height: 150px; /* 调整图片高度 */
+    overflow: hidden; /* 限制显示范围 */
+    z-index: 1; /* 确保它在其他内容上方 */
+}
+
+.QuizPage {
+  position: relative; 
+  padding: 35px 40px;
+}
+
+.QuizPage h3 {
+  text-align: left;
+  margin-bottom: 4px; /* 设置问题与选项按钮的间距 */
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 35px;
+}
+
+/* 选项按钮样式 */
+.option-button {
+  background-color: white;
+  border: 1px solid #293264;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 8px;
+  margin: 5px; /* 设置一些间距 */
+  color: #293264;
+  font-weight: bold;
+}
+
+/* 选中状态的选项按钮样式 */
+.option-button.selected {
+  background-color: #D6DBF5;
+  color: #293264;
+  border: none;
+}
+
+/* 检查答案按钮样式 */
+.check-answers-button {
+  display: block;
+  width: 30%; /* 或者特定的宽度 */
+  padding: 11px 0;
+  background-color: #4D5B9E;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  margin: 20px auto; 
+  margin-bottom: 0px;
+}
+
+.question-container {
+    border-bottom: 1px solid #D6DBF5; /* 灰色的线条 */
+    padding-bottom: 12px; /* 添加一些底部内边距 */
+}
+
+.QuizPage--block1 {
+    position: absolute;
+    top: -30px;
+    left: 428px;
+    width: 150px; /* 调整图片宽度 */
+    height: 150px; /* 调整图片高度 */
+    overflow: hidden; /* 限制显示范围 */
+}
+
+.QuizPage--block2 {
+    position: absolute;
+    top: 460px;
+    right: 510px;
+    width: 100px; /* 调整图片宽度 */
+    height: 140px;
+    overflow: hidden; /* 限制显示范围 */
+}
+
+/* 正确答案的样式 */
+.option-button.correct {
+    background-color: #94D7A2; /* 正确答案的背景色 */
+    border: none;
+}
+
+/* 错误答案的样式 */
+.option-button.incorrect {
+    background-color: #F8BCBC; /* 错误答案的背景色 */
+}
+
+/* 禁用的答案样式 */
+.option-button.disabled-option {
+    background-color: #E8E8E8; /* 灰色蒙层 */
+    color: #A0A0A0; /* 文字颜色也可以调整为较浅的颜色 */
+    pointer-events: none; /* 禁止点击事件 */
+}
+
+.results-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin-top: 20px; /* 与上面元素的间距 */
+}
+
+.results-container p {
+    font-size: 1em; /* 字体大小 */
+    margin-right: 20px; /* 与按钮的间距 */
+    font-weight: bold;
+}
+
+.results-container button {
+    background-color: #4D5B9E; /* 背景色 */
+    color: white; /* 文字颜色 */
+    border: none; /* 无边框 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 10px; /* 边框圆角 */
+    font-size: 0.2em; /* 字体大小 */
+}
